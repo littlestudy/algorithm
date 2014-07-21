@@ -42,6 +42,6 @@ public class Evaluate_Reverse_Polish_Notation {
 		Solution s = e.new Solution();
 		String [] str = {"3","-4","+"};
 		int result = s.evalRPN(str);
-		System.out.println(result);
+		System.out.println((int)Math.sqrt(4));
 	}
 }
