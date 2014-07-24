@@ -25,7 +25,7 @@ public class Reverse_Words_in_a_String {
 	public static void main(String[] args) {
 		Reverse_Words_in_a_String r = new Reverse_Words_in_a_String();
 		Solution s = r.new Solution();
-		String result = s.reverseWords(" 1");
+		String result = s.reverseWords("   1  2");
 		System.out.println(result);
 	}
 }
