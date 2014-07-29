@@ -12,6 +12,7 @@ import java.util.Map;
  * Output: index1=1, index2=2 
  * @author ym
  *
+ * 解法：O(n)。哈希表。将每个数字放在map中，历遍数组，如果target-当前数组值的数值在map中，得到答案。
  */
 public class Two_Sum {
 	public class Solution {
