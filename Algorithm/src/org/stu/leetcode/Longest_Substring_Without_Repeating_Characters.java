@@ -6,6 +6,7 @@ package org.stu.leetcode;
  * For "bbbbb" the longest substring is "b", with the length of 1.
  * @author ym
  * 使用StringBuilder存放便利字符串时的子串，当出现重复元素后，判断长度，找到sb中相同元素的位置的下一个位置，sb的重建位置从该位置开始。
+ * 遍历完成，退出循环后要再比较一次长度
  */
 public class Longest_Substring_Without_Repeating_Characters {
 
@@ -25,7 +26,7 @@ public class Longest_Substring_Without_Repeating_Characters {
 				sb.append(s.substring(i, i + 1));				
 			}
 			
-			len = sb.toString().length() > len ? sb.toString().length() : len; // 推出循环后要再比较一次长度
+			len = sb.toString().length() > len ? sb.toString().length() : len; // 退出循环后要再比较一次长度
 			
 			return len;
 		}
