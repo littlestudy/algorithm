@@ -19,6 +19,9 @@ public class Test {
 		} else {
 			System.out.println("");
 		}
+		
+		String str = new String("abcde");
+		System.out.println(str.substring(4, 5));
 	}
 
 }
